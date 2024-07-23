@@ -1,3 +1,8 @@
+"""
+This module provides a simple function to greet the world.
+"""
+
+
 def hello():
     print("Hello, World!")
 
