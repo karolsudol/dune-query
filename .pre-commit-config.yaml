@@ -9,6 +9,8 @@ repos:
     rev: v3.0.1
     hooks:
     -   id: pylint
+        additional_dependencies:
+        - dune-client==1.7.3
 -   repo: https://github.com/psf/black
     rev: 23.7.0
     hooks:

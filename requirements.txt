@@ -6,3 +6,8 @@ pytest==7.4.0
 python-dotenv>=0.20.0
 pre-commit==2.17.0
 pytest-cov==3.0.0
+SQLAlchemy<2.0.0
+sqlalchemy-stubs==0.4
+pandas==2.0.3
+pandas-stubs==2.0.2.230605
+numpy==1.26.4
