@@ -9,7 +9,6 @@ repos:
     rev: v3.0.1
     hooks:
     -   id: pylint
-        args: [--disable=missing-module-docstring,missing-function-docstring]
 -   repo: https://github.com/psf/black
     rev: 23.7.0
     hooks:
@@ -20,5 +19,12 @@ repos:
         name: requirements
         entry: pip install -r requirements.txt
         language: system
+        pass_filenames: false
+        always_run: true
+    -   id: pytest
+        name: pytest
+        entry: pytest
+        language: system
+        types: [python]
         pass_filenames: false
         always_run: true

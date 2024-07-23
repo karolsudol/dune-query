@@ -1,15 +1,10 @@
-"""
-This module provides a simple function to greet the world.
-"""
-
-"""
-This function prints a greeting message to the console.
-"""
+"""A simple cow greeting module."""
 
 
-def hello():
-    print("Hello, World!")
+def cow_say():
+    """Return a cow's greeting."""
+    return "Moo! I'm a cow!"
 
 
 if __name__ == "__main__":
-    hello()
+    print(cow_say())
