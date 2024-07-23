@@ -1,8 +1,8 @@
 black==23.3.0
 duneapi==8.0.0
-dune-client==1.1.1
+dune-client==1.7.3
 pylint==2.17.4
 pytest==7.4.0
 python-dotenv>=0.20.0
-pre-commit
-pytest-cov
+pre-commit==2.17.0
+pytest-cov==3.0.0
