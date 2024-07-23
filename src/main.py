@@ -1,4 +1,7 @@
-"""A simple cow greeting module."""
+# import os
+# from dune_client import DuneClient
+# from src.fetch.dune import DuneTradesFetcher, AccountingPeriod
+# from src.constants import WETH_TOKEN_ADDRESS, USDC_TOKEN_ADDRESS
 
 
 def cow_say():
@@ -8,24 +11,22 @@ def cow_say():
 
 if __name__ == "__main__":
     print(cow_say())
+    # Load Dune API key from environment variable
+    # dune_api_key = os.environ["DUNE_API_KEY"]
 
+    # # Create a Dune client instance
+    # dune_client = DuneClient(dune_api_key)
 
-# from src.fetch.dune import DuneTradesFetcher
+    # # Define the accounting period (e.g. last 24 hours)
+    # period = AccountingPeriod(start="1 day ago", end="now")
 
-# # Set up Dune API client
-# dune_client = DuneClient(api_key="YOUR_API_KEY")
+    # # Create a Dune trades fetcher instance
+    # fetcher = DuneTradesFetcher(dune_client, period)
 
-# # Create an accounting period (e.g. last 30 days)
-# accounting_period = AccountingPeriod(
-#     start=date.today() - timedelta(days=30), end=date.today()
-# )
+    # # Fetch trades for WETH-USDC token pair
+    # trades = fetcher.get_trades(WETH_TOKEN_ADDRESS, USDC_TOKEN_ADDRESS)
 
-# # Create an instance of the DuneTradesFetcher class
-# fetcher = DuneTradesFetcher(dune_client, accounting_period)
-
-# # Fetch trades for WETH-USDC token pair
-# trades = fetcher.get_trades("0x...WETH_address", "0x...USDC_address")
-
-# # Do something with the trades data
-# for trade in trades:
-#     print(trade)
+    # # Print out the results
+    # print("Trade Results:")
+    # for trade in trades:
+    #     print(trade)
