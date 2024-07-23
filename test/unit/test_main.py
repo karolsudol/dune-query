@@ -1,11 +1,8 @@
-import unittest
+"""Test module for the cow greeting function."""
+
 from src.main import cow_say
 
 
-class TestMain(unittest.TestCase):
-    def test_cow_say(self):
-        self.assertEqual(cow_say(), "Moo! I'm a cow!")
-
-
-if __name__ == "__main__":
-    unittest.main()
+def test_cow_say():
+    """Test the cow_say function."""
+    assert cow_say() == "Moo! I'm a cow!"
