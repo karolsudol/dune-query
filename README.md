@@ -1,3 +1,3 @@
 # dune-query
 
-Dine Clinet Models and Methods
+Dune Clinet Models and Methods
